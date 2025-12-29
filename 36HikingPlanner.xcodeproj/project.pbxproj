@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		74915D122F032BE400E85B00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74915D082F032BE400E85B00 /* Assets.xcassets */; };
+		74915D142F032BE400E85B00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74915D0C2F032BE400E85B00 /* LaunchScreen.storyboard */; };
+		74915D152F032BE400E85B00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74915D0E2F032BE400E85B00 /* Main.storyboard */; };
+		74915D162F032BE400E85B00 /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74915CE52F032BE400E85B00 /* Equipment.swift */; };
+		74915D172F032BE400E85B00 /* FoodWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74915CE62F032BE400E85B00 /* FoodWater.swift */; };
+		74915D182F032BE400E85B00 /* HikePlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74915CE72F032BE400E85B00 /* HikePlan.swift */; };
+		74915D192F032BE400E85B00 /* HikingRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74915CE82F032BE400E85B00 /* HikingRoute.swift */; };
+		74915D1A2F032BE400E85B00 /* Safety.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74915CE92F032BE400E85B00 /* Safety.swift */; };
+		74915D1B2F032BE400E85B00 /* Waypoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74915CEA2F032BE400E85B00 /* Waypoint.swift */; };
+		74915D1C2F032BE400E85B00 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74915CEB2F032BE400E85B00 /* Weather.swift */; };
+		74915D1D2F032BE400E85B00 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74915CED2F032BE400E85B00 /* ColorExtension.swift */; };
+		74915D1E2F032BE400E85B00 /* EquipmentTemplates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74915CEE2F032BE400E85B00 /* EquipmentTemplates.swift */; };
+		74915D1F2F032BE400E85B00 /* RouteCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74915CEF2F032BE400E85B00 /* RouteCalculator.swift */; };
+		74915D202F032BE400E85B00 /* SafetyAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74915CF02F032BE400E85B00 /* SafetyAnalyzer.swift */; };
+		74915D212F032BE400E85B00 /* EquipmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74915CF22F032BE400E85B00 /* EquipmentViewModel.swift */; };
+		74915D222F032BE400E85B00 /* PlanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74915CF32F032BE400E85B00 /* PlanViewModel.swift */; };
+		74915D232F032BE400E85B00 /* RouteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74915CF42F032BE400E85B00 /* RouteViewModel.swift */; };
+		74915D242F032BE400E85B00 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74915CF52F032BE400E85B00 /* WeatherViewModel.swift */; };
+		74915D252F032BE400E85B00 /* CheckLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74915CF72F032BE400E85B00 /* CheckLink.swift */; };
+		74915D262F032BE400E85B00 /* InternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74915CF82F032BE400E85B00 /* InternetViewController.swift */; };
+		74915D272F032BE400E85B00 /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74915CF92F032BE400E85B00 /* LoaderViewController.swift */; };
+		74915D282F032BE400E85B00 /* AddEditEquipmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74915CFB2F032BE400E85B00 /* AddEditEquipmentView.swift */; };
+		74915D292F032BE400E85B00 /* AddEditRouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74915CFC2F032BE400E85B00 /* AddEditRouteView.swift */; };
+		74915D2A2F032BE400E85B00 /* EmergencyPrepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74915CFD2F032BE400E85B00 /* EmergencyPrepView.swift */; };
+		74915D2B2F032BE400E85B00 /* EquipmentChecklistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74915CFE2F032BE400E85B00 /* EquipmentChecklistView.swift */; };
+		74915D2C2F032BE400E85B00 /* FoodWaterCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74915CFF2F032BE400E85B00 /* FoodWaterCalculatorView.swift */; };
+		74915D2D2F032BE400E85B00 /* MainDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74915D002F032BE400E85B00 /* MainDashboardView.swift */; };
+		74915D2E2F032BE400E85B00 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74915D012F032BE400E85B00 /* OnboardingView.swift */; };
+		74915D2F2F032BE400E85B00 /* PlanCreatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74915D022F032BE400E85B00 /* PlanCreatorView.swift */; };
+		74915D302F032BE400E85B00 /* RoutePlannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74915D032F032BE400E85B00 /* RoutePlannerView.swift */; };
+		74915D312F032BE400E85B00 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74915D042F032BE400E85B00 /* SettingsView.swift */; };
+		74915D322F032BE400E85B00 /* WeatherSafetyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74915D052F032BE400E85B00 /* WeatherSafetyView.swift */; };
+		74915D332F032BE400E85B00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74915D072F032BE400E85B00 /* AppDelegate.swift */; };
+		74915D342F032BE400E85B00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74915D092F032BE400E85B00 /* ContentView.swift */; };
+		74915D352F032BE400E85B00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74915D0F2F032BE400E85B00 /* SceneDelegate.swift */; };
+		74915D362F032BE400E85B00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74915D102F032BE400E85B00 /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		208FF5B67DAD1DC35E4D49EB /* Pods-36HikingPlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-36HikingPlanner.release.xcconfig"; path = "Target Support Files/Pods-36HikingPlanner/Pods-36HikingPlanner.release.xcconfig"; sourceTree = "<group>"; };
+		51F45D736463D5BAC562FA37 /* Pods_36HikingPlanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_36HikingPlanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74915CE52F032BE400E85B00 /* Equipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
+		74915CE62F032BE400E85B00 /* FoodWater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodWater.swift; sourceTree = "<group>"; };
+		74915CE72F032BE400E85B00 /* HikePlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikePlan.swift; sourceTree = "<group>"; };
+		74915CE82F032BE400E85B00 /* HikingRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingRoute.swift; sourceTree = "<group>"; };
+		74915CE92F032BE400E85B00 /* Safety.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Safety.swift; sourceTree = "<group>"; };
+		74915CEA2F032BE400E85B00 /* Waypoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waypoint.swift; sourceTree = "<group>"; };
+		74915CEB2F032BE400E85B00 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		74915CED2F032BE400E85B00 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		74915CEE2F032BE400E85B00 /* EquipmentTemplates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentTemplates.swift; sourceTree = "<group>"; };
+		74915CEF2F032BE400E85B00 /* RouteCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteCalculator.swift; sourceTree = "<group>"; };
+		74915CF02F032BE400E85B00 /* SafetyAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyAnalyzer.swift; sourceTree = "<group>"; };
+		74915CF22F032BE400E85B00 /* EquipmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentViewModel.swift; sourceTree = "<group>"; };
+		74915CF32F032BE400E85B00 /* PlanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewModel.swift; sourceTree = "<group>"; };
+		74915CF42F032BE400E85B00 /* RouteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteViewModel.swift; sourceTree = "<group>"; };
+		74915CF52F032BE400E85B00 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		74915CF72F032BE400E85B00 /* CheckLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckLink.swift; sourceTree = "<group>"; };
+		74915CF82F032BE400E85B00 /* InternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetViewController.swift; sourceTree = "<group>"; };
+		74915CF92F032BE400E85B00 /* LoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
+		74915CFB2F032BE400E85B00 /* AddEditEquipmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditEquipmentView.swift; sourceTree = "<group>"; };
+		74915CFC2F032BE400E85B00 /* AddEditRouteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditRouteView.swift; sourceTree = "<group>"; };
+		74915CFD2F032BE400E85B00 /* EmergencyPrepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyPrepView.swift; sourceTree = "<group>"; };
+		74915CFE2F032BE400E85B00 /* EquipmentChecklistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentChecklistView.swift; sourceTree = "<group>"; };
+		74915CFF2F032BE400E85B00 /* FoodWaterCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodWaterCalculatorView.swift; sourceTree = "<group>"; };
+		74915D002F032BE400E85B00 /* MainDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDashboardView.swift; sourceTree = "<group>"; };
+		74915D012F032BE400E85B00 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		74915D022F032BE400E85B00 /* PlanCreatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanCreatorView.swift; sourceTree = "<group>"; };
+		74915D032F032BE400E85B00 /* RoutePlannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutePlannerView.swift; sourceTree = "<group>"; };
+		74915D042F032BE400E85B00 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		74915D052F032BE400E85B00 /* WeatherSafetyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherSafetyView.swift; sourceTree = "<group>"; };
+		74915D072F032BE400E85B00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		74915D082F032BE400E85B00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74915D092F032BE400E85B00 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		74915D0A2F032BE400E85B00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74915D0B2F032BE400E85B00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		74915D0D2F032BE400E85B00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		74915D0F2F032BE400E85B00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		74915D102F032BE400E85B00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		74CF7EF82EFBF1A10061AFA8 /* 36HikingPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 36HikingPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7557F10F6B375B5B45D53BEC /* Pods-36HikingPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-36HikingPlanner.debug.xcconfig"; path = "Target Support Files/Pods-36HikingPlanner/Pods-36HikingPlanner.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74CF7EF52EFBF1A10061AFA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70B919192D1DB6D431A0E386 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7557F10F6B375B5B45D53BEC /* Pods-36HikingPlanner.debug.xcconfig */,
+				208FF5B67DAD1DC35E4D49EB /* Pods-36HikingPlanner.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		74915CEC2F032BE400E85B00 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				74915CE52F032BE400E85B00 /* Equipment.swift */,
+				74915CE62F032BE400E85B00 /* FoodWater.swift */,
+				74915CE72F032BE400E85B00 /* HikePlan.swift */,
+				74915CE82F032BE400E85B00 /* HikingRoute.swift */,
+				74915CE92F032BE400E85B00 /* Safety.swift */,
+				74915CEA2F032BE400E85B00 /* Waypoint.swift */,
+				74915CEB2F032BE400E85B00 /* Weather.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		74915CF12F032BE400E85B00 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				74915CED2F032BE400E85B00 /* ColorExtension.swift */,
+				74915CEE2F032BE400E85B00 /* EquipmentTemplates.swift */,
+				74915CEF2F032BE400E85B00 /* RouteCalculator.swift */,
+				74915CF02F032BE400E85B00 /* SafetyAnalyzer.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		74915CF62F032BE400E85B00 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				74915CF22F032BE400E85B00 /* EquipmentViewModel.swift */,
+				74915CF32F032BE400E85B00 /* PlanViewModel.swift */,
+				74915CF42F032BE400E85B00 /* RouteViewModel.swift */,
+				74915CF52F032BE400E85B00 /* WeatherViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		74915CFA2F032BE400E85B00 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				74915CF72F032BE400E85B00 /* CheckLink.swift */,
+				74915CF82F032BE400E85B00 /* InternetViewController.swift */,
+				74915CF92F032BE400E85B00 /* LoaderViewController.swift */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		74915D062F032BE400E85B00 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				74915CFA2F032BE400E85B00 /* LoadingView */,
+				74915CFB2F032BE400E85B00 /* AddEditEquipmentView.swift */,
+				74915CFC2F032BE400E85B00 /* AddEditRouteView.swift */,
+				74915CFD2F032BE400E85B00 /* EmergencyPrepView.swift */,
+				74915CFE2F032BE400E85B00 /* EquipmentChecklistView.swift */,
+				74915CFF2F032BE400E85B00 /* FoodWaterCalculatorView.swift */,
+				74915D002F032BE400E85B00 /* MainDashboardView.swift */,
+				74915D012F032BE400E85B00 /* OnboardingView.swift */,
+				74915D022F032BE400E85B00 /* PlanCreatorView.swift */,
+				74915D032F032BE400E85B00 /* RoutePlannerView.swift */,
+				74915D042F032BE400E85B00 /* SettingsView.swift */,
+				74915D052F032BE400E85B00 /* WeatherSafetyView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		74915D112F032BE400E85B00 /* 36HikingPlanner */ = {
+			isa = PBXGroup;
+			children = (
+				74915CEC2F032BE400E85B00 /* Models */,
+				74915CF12F032BE400E85B00 /* Utilities */,
+				74915CF62F032BE400E85B00 /* ViewModels */,
+				74915D062F032BE400E85B00 /* Views */,
+				74915D072F032BE400E85B00 /* AppDelegate.swift */,
+				74915D082F032BE400E85B00 /* Assets.xcassets */,
+				74915D092F032BE400E85B00 /* ContentView.swift */,
+				74915D0A2F032BE400E85B00 /* Info.plist */,
+				74915D0C2F032BE400E85B00 /* LaunchScreen.storyboard */,
+				74915D0E2F032BE400E85B00 /* Main.storyboard */,
+				74915D0F2F032BE400E85B00 /* SceneDelegate.swift */,
+				74915D102F032BE400E85B00 /* ViewController.swift */,
+			);
+			path = 36HikingPlanner;
+			sourceTree = "<group>";
+		};
+		74CF7EEF2EFBF1A10061AFA8 = {
+			isa = PBXGroup;
+			children = (
+				74915D112F032BE400E85B00 /* 36HikingPlanner */,
+				74CF7EF92EFBF1A10061AFA8 /* Products */,
+				70B919192D1DB6D431A0E386 /* Pods */,
+				D6D2E7C28BE7C74805288512 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		74CF7EF92EFBF1A10061AFA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74CF7EF82EFBF1A10061AFA8 /* 36HikingPlanner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6D2E7C28BE7C74805288512 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51F45D736463D5BAC562FA37 /* Pods_36HikingPlanner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74CF7EF72EFBF1A10061AFA8 /* 36HikingPlanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74CF7F0B2EFBF1A20061AFA8 /* Build configuration list for PBXNativeTarget "36HikingPlanner" */;
+			buildPhases = (
+				2BB95F48273F83A517B74568 /* [CP] Check Pods Manifest.lock */,
+				74CF7EF42EFBF1A10061AFA8 /* Sources */,
+				74CF7EF52EFBF1A10061AFA8 /* Frameworks */,
+				74CF7EF62EFBF1A10061AFA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 36HikingPlanner;
+			productName = 36HikingPlanner;
+			productReference = 74CF7EF82EFBF1A10061AFA8 /* 36HikingPlanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		74CF7EF02EFBF1A10061AFA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					74CF7EF72EFBF1A10061AFA8 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+				};
+			};
+			buildConfigurationList = 74CF7EF32EFBF1A10061AFA8 /* Build configuration list for PBXProject "36HikingPlanner" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 74CF7EEF2EFBF1A10061AFA8;
+			productRefGroup = 74CF7EF92EFBF1A10061AFA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74CF7EF72EFBF1A10061AFA8 /* 36HikingPlanner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74CF7EF62EFBF1A10061AFA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74915D122F032BE400E85B00 /* Assets.xcassets in Resources */,
+				74915D142F032BE400E85B00 /* LaunchScreen.storyboard in Resources */,
+				74915D152F032BE400E85B00 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BB95F48273F83A517B74568 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-36HikingPlanner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74CF7EF42EFBF1A10061AFA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74915D162F032BE400E85B00 /* Equipment.swift in Sources */,
+				74915D172F032BE400E85B00 /* FoodWater.swift in Sources */,
+				74915D182F032BE400E85B00 /* HikePlan.swift in Sources */,
+				74915D192F032BE400E85B00 /* HikingRoute.swift in Sources */,
+				74915D1A2F032BE400E85B00 /* Safety.swift in Sources */,
+				74915D1B2F032BE400E85B00 /* Waypoint.swift in Sources */,
+				74915D1C2F032BE400E85B00 /* Weather.swift in Sources */,
+				74915D1D2F032BE400E85B00 /* ColorExtension.swift in Sources */,
+				74915D1E2F032BE400E85B00 /* EquipmentTemplates.swift in Sources */,
+				74915D1F2F032BE400E85B00 /* RouteCalculator.swift in Sources */,
+				74915D202F032BE400E85B00 /* SafetyAnalyzer.swift in Sources */,
+				74915D212F032BE400E85B00 /* EquipmentViewModel.swift in Sources */,
+				74915D222F032BE400E85B00 /* PlanViewModel.swift in Sources */,
+				74915D232F032BE400E85B00 /* RouteViewModel.swift in Sources */,
+				74915D242F032BE400E85B00 /* WeatherViewModel.swift in Sources */,
+				74915D252F032BE400E85B00 /* CheckLink.swift in Sources */,
+				74915D262F032BE400E85B00 /* InternetViewController.swift in Sources */,
+				74915D272F032BE400E85B00 /* LoaderViewController.swift in Sources */,
+				74915D282F032BE400E85B00 /* AddEditEquipmentView.swift in Sources */,
+				74915D292F032BE400E85B00 /* AddEditRouteView.swift in Sources */,
+				74915D2A2F032BE400E85B00 /* EmergencyPrepView.swift in Sources */,
+				74915D2B2F032BE400E85B00 /* EquipmentChecklistView.swift in Sources */,
+				74915D2C2F032BE400E85B00 /* FoodWaterCalculatorView.swift in Sources */,
+				74915D2D2F032BE400E85B00 /* MainDashboardView.swift in Sources */,
+				74915D2E2F032BE400E85B00 /* OnboardingView.swift in Sources */,
+				74915D2F2F032BE400E85B00 /* PlanCreatorView.swift in Sources */,
+				74915D302F032BE400E85B00 /* RoutePlannerView.swift in Sources */,
+				74915D312F032BE400E85B00 /* SettingsView.swift in Sources */,
+				74915D322F032BE400E85B00 /* WeatherSafetyView.swift in Sources */,
+				74915D332F032BE400E85B00 /* AppDelegate.swift in Sources */,
+				74915D342F032BE400E85B00 /* ContentView.swift in Sources */,
+				74915D352F032BE400E85B00 /* SceneDelegate.swift in Sources */,
+				74915D362F032BE400E85B00 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		74915D0C2F032BE400E85B00 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74915D0B2F032BE400E85B00 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		74915D0E2F032BE400E85B00 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74915D0D2F032BE400E85B00 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		74CF7F0C2EFBF1A20061AFA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7557F10F6B375B5B45D53BEC /* Pods-36HikingPlanner.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = 36HikingPlanner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Line Hiking Planner";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ttu.l1nh1kpl5nr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		74CF7F0D2EFBF1A20061AFA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 208FF5B67DAD1DC35E4D49EB /* Pods-36HikingPlanner.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = 36HikingPlanner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Line Hiking Planner";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ttu.l1nh1kpl5nr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		74CF7F0E2EFBF1A20061AFA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		74CF7F0F2EFBF1A20061AFA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74CF7EF32EFBF1A10061AFA8 /* Build configuration list for PBXProject "36HikingPlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74CF7F0E2EFBF1A20061AFA8 /* Debug */,
+				74CF7F0F2EFBF1A20061AFA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74CF7F0B2EFBF1A20061AFA8 /* Build configuration list for PBXNativeTarget "36HikingPlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74CF7F0C2EFBF1A20061AFA8 /* Debug */,
+				74CF7F0D2EFBF1A20061AFA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 74CF7EF02EFBF1A10061AFA8 /* Project object */;
+}
